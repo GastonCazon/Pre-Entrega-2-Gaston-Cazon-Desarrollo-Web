@@ -1,0 +1,605 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+/* colores a usar*/
+:root {
+  --main-color: #ffff00;
+  --txt-color: #ffffff;
+  --txt-color-2: #000;
+  --second-color: #ffff0090;
+  --bg-color: #070613;
+  --bg-color-2: grey;
+}
+
+body {
+  background-image: url(../assets/img/bg.jpg);
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* nav */
+nav {
+  background-color: var(--main-color);
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* logo */
+.nav-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+/* etiuetas a  */
+.nav-links a {
+  text-decoration: none;
+  color: var(--txt-color-2);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline solid;
+  position: relative;
+  top: 2px;
+}
+
+/* boton/es */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  border: 3px solid;
+  transition: all 0.3s;
+  background-color: var(--txt-color);
+}
+
+.btn:hover {
+  background-color: var(--bg-color-2);
+  transform: scale(1.1);
+}
+
+.btn-link {
+  text-decoration: none;
+}
+/* header */
+header {
+  display: flex;
+  color: var(--txt-color);
+  width: 100%;
+  margin-top: 100px;
+}
+/* titulos y texto */
+.header-title {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  float: left;
+  margin-left: 30px;
+  margin-top: 150px;
+  text-align: center;
+  cursor: default;
+}
+
+.header-title h2 {
+  font-size: 5rem;
+  width: 100%;
+}
+
+.header-title h3 {
+  font-size: 3rem;
+}
+
+.header-title p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+/* imagen del header */
+.header-img {
+  display: flex;
+  width: 50%;
+  float: right;
+  height: 600px;
+  position: relative;
+  left: 50px;
+}
+
+.header-img img {
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px white;
+}
+
+/* contenedor de planes */
+main {
+  margin-top: 100px;
+  width: 100%;
+}
+/* contenedor */
+.content-plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+/* titulo */
+.planes-title {
+  color: var(--txt-color);
+  text-align: center;
+  margin: 80px 0;
+  font-size: 2rem;
+}
+/* contenedor de info */
+.planes-container {
+  background-color: var(--bg-color-2);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 314px;
+  border-radius: 10px;
+  border: 3px solid yellow;
+  width: 20%;
+  transition: all 0.3s;
+}
+
+.planes-container:hover {
+  transform: scale(1.1);
+  color: var(--txt-color);
+}
+
+.icon {
+  font-size: 4rem;
+  margin: 10px;
+  cursor: default;
+}
+
+.subtitle {
+  margin: 10px;
+  cursor: default;
+}
+
+.txt {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: default;
+}
+/* contenedor de personal */
+.content-personal {
+  display: flex;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.personal-title {
+  display: flex;
+  width: 50%;
+  float: right;
+  color: var(--txt-color);
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.personal-title h1 {
+  margin-bottom: 100px;
+  font-size: 4rem;
+}
+
+.personal-title p {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  width: 70%;
+}
+
+.personal-img {
+  display: flex;
+  width: 50%;
+  float: left;
+  justify-content: center;
+}
+
+.personal-img img {
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px white;
+}
+
+/* Titulo de paquetes */
+
+.paquetes-title {
+  color: var(--txt-color);
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2rem;
+}
+
+/* contenedor paquetes */
+
+.content-paquetes {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* contenedor de info */
+.container-paquetes {
+  background-color: var(--bg-color-2);
+  width: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 8px 5px white;
+  transition: all 0.3s;
+}
+
+.container-paquetes:hover {
+  transform: scale(1.1);
+  color: var(--txt-color);
+}
+/* boton interno */
+.btn--mod {
+  width: 250px;
+  background-color: var(--second-color);
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  bottom: 10px;
+  transition: none;
+}
+
+.btn--mod:hover {
+  background-color: var(--main-color);
+  transform: none;
+}
+
+.title--color {
+  font-size: 24px;
+}
+
+.txt--color {
+  font-size: 18px;
+  font-weight: 600;
+}
+/* contenedor de mapa */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.map-container h2 {
+  color: var(--txt-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.map-container iframe {
+  width: 600px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  background-color: var(--main-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.content-footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.logo-footer {
+  width: 25%;
+}
+
+.logo-footer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  margin: 15px 0 0 15px;
+}
+
+.logo-footer p {
+  width: 70%;
+  margin-left: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: default;
+}
+/* iconos de redes */
+.redes {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 25%;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.redes a {
+  text-decoration: none;
+  color: var(--txt-color-2);
+  transition: all 0.2s;
+}
+
+.redes a:hover {
+  transform: scale(1.1);
+  color: var(--bg-color-2);
+}
+
+.redes i {
+  font-size: 30px;
+  margin-left: 10px;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+/* contenedor de links de footer */
+.content-links {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-links {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container-links h3 {
+  font-size: 24px;
+  cursor: default;
+}
+
+.container-links ul {
+  margin-top: 10px;
+}
+
+.container-links li {
+  margin: 15px;
+  list-style: none;
+}
+
+.container-links a {
+  text-decoration: none;
+  color: var(--txt-color-2);
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.container-links a:hover {
+  text-decoration: underline 2px solid;
+}
+/* tamaño telefono */
+@media (min-width: 480px) and (max-width: 1200px) {
+  /* navegador */
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  /* links */
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  /* header */
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+  /* titulo del header */
+  .header-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .header-title p {
+    font-size: 16px;
+    margin: 0 20px;
+  }
+  /* imagen del header */
+  .header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-img img {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    right: 50px;
+    margin: 0;
+  }
+  /* main */
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  /* contenedor de seccion planes */
+  .content-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* contenedor de las tarjetas de planes */
+  .planes-container {
+    width: 70%;
+    margin: 20px 0;
+  }
+  /* contenedor de seccion personal */
+  .content-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    width: 100%;
+  }
+  /* imagen de seccion de personal */
+  .personal-img img {
+    width: 420px;
+    height: 400px;
+  }
+  /* titulo de personal */
+  .personal-title {
+    width: 100%;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .personal-title h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .personal-title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+  /* seccion de paquetes */
+  /* titulo de seccion de paquetes */
+  .paquetes-title {
+    font-size: 28px;
+    margin: 0;
+  }
+  /* contenedor de tarjetas */
+  .content-paquetes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* contenedor de info tarjetas */
+  .container-paquetes {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    margin: 40px 0;
+  }
+  /* mapa */
+  .map-container {
+    margin: 0;
+    margin-top: 40px;
+    width: 100%;
+  }
+  /* iframe */
+  .map-container iframe {
+    display: flex;
+    width: 70%;
+  }
+  /* footer */
+
+  .logo-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-footer p {
+    width: 40%;
+  }
+
+  .redes {
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .content-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  /* footer */
+  footer {
+    display: flex;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .content-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redes a {
+    margin: 5px 0;
+  }
+
+  .content-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
