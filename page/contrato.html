@@ -4,350 +4,320 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet" />
     <link rel="stylesheet" href="../css/contrato.css" />
-    <title>The Gym | Fitnes</title>
+    <link rel="icon" type="imagen" href="../assets/logo.jpg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <title>The Gym | Fittnes</title>
   </head>
   <body>
-    <!-- navegador -->
-    <nav>
-      <div class="nav-logo">
-        <a href="../index.html"><img src="../assets/img/logo.jpg" /></a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="#Planes">Planes</a></li>
-        <li><a href="#Paquetes">Paquetes</a></li>
-        <li><a href="#Formulario">Formulario</a></li>
-        <li><a href="#mas">Mas</a></li>
-      </ul>
-      <a href="../index.html" class="btn-link"
-        ><button class="btn">Volver</button></a
-      >
-    </nav>
-    <!-- header -->
+    <!-- inicio header -->
     <header>
-      <div class="header-title">
-        <h2>Bienvenido</h2>
-        <h3>THE GYM</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-          sapiente distinctio alias explicabo maxime ratione?
-        </p>
-      </div>
-      <div class="header-img">
-        <img src="../assets/img/img1.jpg" />
+      <div class="container-fluid">
+        <div class="row">
+          <!-- inicio logo -->
+          <div class="col-md-2">
+            <div class="logo">
+              <a href="../index.html"><img src="../assets/logo.jpg" /></a>
+            </div>
+          </div>
+          <!-- fin logo -->
+
+          <!-- inicio nav -->
+          <div class="col-md-8">
+            <div class="nav">
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#mas">Mas</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- fin nav -->
+
+          <!-- inicio boton -->
+          <div class="col-md-2">
+            <div class="btn">
+              <a href="../index.html"><button>Volver</button></a>
+            </div>
+          </div>
+          <!-- fin boton -->
+        </div>
       </div>
     </header>
-    <!-- main -->
+    <!-- fin header -->
+
+    <!-- inicio main -->
     <main>
-      <div class="title-plans">
-        <h2 id="Planes">Planes</h2>
-      </div>
-      <div class="content-plans1">
-        <section class="casilla">
-          <div class="container-info">
-            <div class="icon">
-              <i class="bx bxs-food-menu"></i>
+      <!-- inicio seccion 1 -->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <!-- inicio Lado izquierdo texto -->
+            <div class="col-md-6">
+              <div class="txt">
+                <h2>Bienvenido</h2>
+                <h3>THE GYM</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Doloremque corrupti natus ad qui mollitia tenetur culpa at
+                  veritatis error tempore.
+                </p>
+              </div>
             </div>
-            <div class="title">
-              <h2>Plan de alimentacion</h2>
+            <!-- fin Lado izquierdo texto -->
+
+            <!-- inicio Lado derecho imagen -->
+            <div class="col-md-6">
+              <div class="img">
+                <img src="../assets/img1.jpg" />
+              </div>
             </div>
-            <div class="txt">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                libero perspiciatis molestias omnis repellendus doloremque!
-              </p>
-            </div>
+            <!-- fin Lado derecho imagen -->
           </div>
-          <div class="container-check">
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Alto en carbohidrato</p>
+        </div>
+      </section>
+      <!-- fin seccion 1 -->
+
+      <!-- inicio seccion 2 -->
+      <section id="planes">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="titulo">
+                <h2>Planes</h2>
+              </div>
             </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Bajo en grasas</p>
+            <div class="col-md-6">
+              <div class="tarjeta">
+                <div class="data">
+                  <i class="bx bxs-food-menu"></i>
+                  <h3>Plan de Alimentacion</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum debitis deserunt iusto placeat est commodi!
+                  </p>
+                </div>
+                <div class="check">
+                  <p><i class="bx bxs-badge-check"></i>Alto en carbohidratos</p>
+                  <p><i class="bx bxs-badge-check"></i>Bajo en grasas</p>
+                  <p><i class="bx bxs-badge-check"></i>Carnes rojas</p>
+                  <p><i class="bx bxs-badge-check"></i>Vegetariano</p>
+                  <p><i class="bx bxs-badge-check"></i>Sin gluten</p>
+                </div>
+              </div>
             </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Carnes rojas</p>
+            <div class="col-md-6">
+              <div class="tarjeta">
+                <div class="data">
+                  <i class="bx bx-plus-medical"></i>
+                  <h3>Plan Medico</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum debitis deserunt iusto placeat est commodi!
+                  </p>
+                </div>
+                <div class="check">
+                  <p><i class="bx bxs-badge-check"></i>Control cardiaco</p>
+                  <p>
+                    <i class="bx bxs-badge-check"></i>Control de oxijenacion en
+                    sangre
+                  </p>
+                  <p>
+                    <i class="bx bxs-badge-check"></i>Asistencia por leciones
+                  </p>
+                  <p>
+                    <i class="bx bxs-badge-check"></i>Asistencia por desmayos
+                  </p>
+                  <p>
+                    <i class="bx bxs-badge-check"></i>Asistencia por fractiras
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Vegetariano</p>
+            <div class="col-md-6">
+              <div class="tarjeta">
+                <div class="data">
+                  <i class="bx bxs-hot"></i>
+                  <h3>Plan de Entrenamiento</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum debitis deserunt iusto placeat est commodi!
+                  </p>
+                </div>
+                <div class="check">
+                  <p><i class="bx bxs-badge-check"></i>Cardio</p>
+                  <p><i class="bx bxs-badge-check"></i>Crossfit</p>
+                  <p><i class="bx bxs-badge-check"></i>Pesas</p>
+                  <p><i class="bx bxs-badge-check"></i>Hiit</p>
+                  <p><i class="bx bxs-badge-check"></i>Fit dance</p>
+                </div>
+              </div>
             </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Sin Gluten</p>
-            </div>
-          </div>
-        </section>
-        <section class="casilla">
-          <div class="container-info">
-            <div class="icon">
-              <i class="bx bx-plus-medical"></i>
-            </div>
-            <div class="title">
-              <h2>Plan de Medico</h2>
-            </div>
-            <div class="txt">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                libero perspiciatis molestias omnis repellendus doloremque!
-              </p>
-            </div>
-          </div>
-          <div class="container-check">
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Control cardiaco</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Control de oxigenacion en sangre</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Asistencia por leciones</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Asistencia por desmayos</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Asistencia por fracturas</p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="content-plans2">
-        <section class="casilla">
-          <div class="container-info">
-            <div class="icon">
-              <i class="bx bxs-hot"></i>
-            </div>
-            <div class="title">
-              <h2>Plan de entrenamiento</h2>
-            </div>
-            <div class="txt">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                libero perspiciatis molestias omnis repellendus doloremque!
-              </p>
-            </div>
-          </div>
-          <div class="container-check">
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Cardio</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Crossfit</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Pesas</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Hiit</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Fit Dance</p>
-            </div>
-          </div>
-        </section>
-        <section class="casilla">
-          <div class="container-info">
-            <div class="icon">
-              <i class="bx bxs-cool"></i>
-            </div>
-            <div class="title">
-              <h2>Plan de Motivacion</h2>
-            </div>
-            <div class="txt">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                libero perspiciatis molestias omnis repellendus doloremque!
-              </p>
-            </div>
-          </div>
-          <div class="container-check">
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Apoyo moral</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Seguimiento</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Videos motivacionales</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Instruccion personal</p>
-            </div>
-            <div class="plans-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Tips para mejorar</p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="title-paquete">
-        <h2 id="Paquetes">Paquetes</h2>
-      </div>
-      <div class="content-p">
-        <div class="tarjeta-p">
-          <div class="container-p">
-            <div class="p-title">
-              <h2>Basico</h2>
-            </div>
-            <div class="p-subtitle">
-              <h3>Incluye</h3>
-            </div>
-          </div>
-          <div class="container-p-check">
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Alimentacion</p>
-            </div>
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Entrenamiento</p>
+            <div class="col-md-6">
+              <div class="tarjeta">
+                <div class="data">
+                  <i class="bx bxs-cool"></i>
+                  <h3>Plan de Motivacion</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum debitis deserunt iusto placeat est commodi!
+                  </p>
+                </div>
+                <div class="check">
+                  <p><i class="bx bxs-badge-check"></i>Apoyo moral</p>
+                  <p><i class="bx bxs-badge-check"></i>Seguimiento</p>
+                  <p><i class="bx bxs-badge-check"></i>Videos motivacionales</p>
+                  <p><i class="bx bxs-badge-check"></i>Instruccion personal</p>
+                  <p><i class="bx bxs-badge-check"></i>Tips para mejorar</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tarjeta-p">
-          <div class="container-p">
-            <div class="p-title">
-              <h2>Medio</h2>
+      </section>
+      <!-- fin seccion 2 -->
+
+      <!-- inicio seccion 3 -->
+      <section id="paquetes">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="titulo">
+                <h2>Paquetes</h2>
+              </div>
             </div>
-            <div class="p-subtitle">
-              <h3>Incluye</h3>
+            <div class="col-md-4">
+              <div class="tarjeta">
+                <div class="data">
+                  <h3>Basico</h3>
+                  <p>Incluye</p>
+                </div>
+                <div class="check">
+                  <p><i class="bx bxs-badge-check"></i>Plan de Alimentacion</p>
+                  <p><i class="bx bxs-badge-check"></i>Plan de Entrenamiento</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="container-p-check">
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Alimentacion</p>
+            <div class="col-md-4">
+              <div class="tarjeta">
+                <div class="data">
+                  <h3>Medio</h3>
+                  <p>Incluye</p>
+                </div>
+                <div class="check">
+                  <p><i class="bx bxs-badge-check"></i>Plan de Alimentacion</p>
+                  <p><i class="bx bxs-badge-check"></i>Plan de Entrenamiento</p>
+                  <p><i class="bx bxs-badge-check"></i>Plan de Motivacion</p>
+                </div>
+              </div>
             </div>
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Entrenamiento</p>
-            </div>
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Motivacion</p>
+            <div class="col-md-4">
+              <div class="tarjeta">
+                <div class="data">
+                  <h3>Avanzado</h3>
+                  <p>Incluye</p>
+                </div>
+                <div class="check">
+                  <p><i class="bx bxs-badge-check"></i>Plan de Alimentacion</p>
+                  <p><i class="bx bxs-badge-check"></i>Plan de Entrenamiento</p>
+                  <p><i class="bx bxs-badge-check"></i>Plan de Motivacion</p>
+                  <p><i class="bx bxs-badge-check"></i>Plan de Medico</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tarjeta-p">
-          <div class="container-p">
-            <div class="p-title">
-              <h2>Intensivo</h2>
+      </section>
+      <!-- fin seccion 3 -->
+
+      <!-- inicio seccion 4 -->
+      <section id="formulario">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="titulo">
+                <h2>Formulario</h2>
+              </div>
             </div>
-            <div class="p-subtitle">
-              <h3>Incluye</h3>
-            </div>
-          </div>
-          <div class="container-p-check">
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Alimentacion</p>
-            </div>
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Entrenamiento</p>
-            </div>
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Motivacion</p>
-            </div>
-            <div class="p-check">
-              <i class="bx bxs-check-circle"></i>
-              <p>Plan Medico</p>
+            <div class="col-md-12-mod">
+              <form action="#">
+                <input type="text" placeholder="Nombre" />
+                <input type="text" placeholder="Apellido" />
+                <input type="email" placeholder="Correo" />
+                <input type="text" placeholder="Telefono" />
+                <p>
+                  Paquete de entrenamiento
+                  <select name="#" id="#">
+                    <option value="1">Basico $50 usd</option>
+                    <option value="2">Medio $70 usd</option>
+                    <option value="3">Avanzado $150 usd</option>
+                  </select>
+                </p>
+                <div class="btn">
+                  <button>Confirmar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- fin seccion 4 -->
     </main>
-    <div class="title-form" id="Formulario">
-      <h2>Formulario</h2>
-    </div>
-    <form action="#" method="post">
-      <div class="container-form">
-        <label><input type="text" name="nombre" placeholder="Nombre" /></label>
-        <label
-          ><input type="text" name="apellido" placeholder="Apellido"
-        /></label>
-        <label><input type="email" name="mail" placeholder="Correo" /></label>
-        <label>
-          <input type="tel" name="telefono" placeholder="Telefono"
-        /></label>
-        <div class="form-check">
-          <div class="txt">
-            <p>Paquete de entrenamiento</p>
-          </div>
-          <select name="entrenamiento" id="">
-            <option value="1">Basico $50 usd</option>
-            <option value="2">Medio $70 usd</option>
-            <option value="3">Intensivo $150 usd</option>
-          </select>
-        </div>
-        <button class="btn">Comprar</button>
-      </div>
-    </form>
+    <!-- fin main -->
+
+    <!-- inicio footer -->
     <footer id="mas">
-      <div class="content-footer">
-        <div class="logo-footer">
-          <img src="../assets/img/logo.jpg" />
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          <div class="redes">
-            <a href="#"><i class="bx bxl-youtube"></i></a>
-            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="index.html"><img src="../assets/logo.jpg" /></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="redes">
+              <i class="bx bxl-instagram-alt"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-youtube"></i>
+            </div>
           </div>
-        </div>
-        <div class="content-links">
-          <div class="container-links">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">Partnership</a></li>
-              <li><a href="#">Network</a></li>
-            </ul>
+          <div class="col-md-3">
+            <div class="info">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Partnership</a></li>
+                <li><a href="#">Network</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="container-links">
-            <h3>About us</h3>
-            <ul>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Channels</a></li>
-              <li><a href="#">Sponsors</a></li>
-            </ul>
+          <div class="col-md-3">
+            <div class="info">
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Channels</a></li>
+                <li><a href="#">Sponsors</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="container-links">
-            <h3>Contact</h3>
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privicy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-            </ul>
+          <div class="col-md-3">
+            <div class="info">
+              <h3>Contact</h3>
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privicy policy</a></li>
+                <li><a href="#">Terms & Condicions</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <!-- fin footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
